@@ -7,10 +7,11 @@ function Course({course}) {
   return (
     <div className='course'>
       <div>
-        <h2>--{title}--</h2>
-        <img src={image} width={250} height={150}></img>    
-        <h5>{descripton}</h5>
-       <a href={link} target='blank'>Go To Course</a>
+        
+        <img src={image} width={250} height={150}></img> 
+        <h2 className='course-title'>- - - {title} - - -</h2>   
+        <p className='course-desc'>{descripton}</p>
+       <a href={link} className='course-link' target='blank'>Go To Course</a>
       </div>
     </div>
   )
